@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+  <title>Document</title>
+  <!-- fontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- normalize css -->
+  <link rel="stylesheet" href="./styles/normalize.css">
+  <!-- custom css -->
+  <link rel="stylesheet" href="./styles/styles.css">
+  
+</head>
+<body>
+  <!-- player 1 container -->
+  
+  <main>
+    <div class="player player-1 player-active" id="player-1">
+      <div class="title">
+        <h2>piggy</h2>
+       
+      </div>
+      
+     
+      <img src="./images/pigyy-img.png" alt="" class="pig-img">
+      <p class="score"  id="score-1">0</p>
+      <div class="current">
+        <p class="curren-label">Current</p>
+        <p class="current-score" id="current-1">0</p>
+      </div>
+    </div>
+    <div class="dice-container">
+      <button class="btn btn--new" id="btn-new"> New game</button>
+      <div class="dice-roll">
+        <img
+        src="./images/dice-1.png"
+        alt="Playing dice"
+        class="dice"
+        id="dice"
+      />
+      
+      </div>
+     
+    <button class="btn btn--roll" id="btn-roll"> Roll dice</button>
+    <button class="btn btn--hold" id="btn-hold"> Hold</button>
+    
+    </div>
+    
+    <!-- player 2 container -->
+    <div class="player player-2" id="player-2">
+    <div class="title">
+  <h2>Rug Rat</h2>
+    </div>
+      <img src="./images/rat-image.png" alt="" class="rat-img">
+      <p class="score" id="score-2">0</p>
+      <div class="current">
+        <p class="current-label">Current</p>
+        <p class="current-score" id="current-2">0</p>
+      </div>
+    </div>
+  
+  </main>
+ 
+  
+
+<!-- script js -->
+  <script src="./scripts/script.js"></script>
+</body>
+</html>
