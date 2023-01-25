@@ -4,18 +4,12 @@
 
 const score1El = document.getElementById('score-1');
 const score2El = document.getElementById('score-2');
-
-
 const current1El = document.getElementById('current-1');
 const current2El = document.getElementById('current-2');
-
 const btnNewEl = document.getElementById('btn-new');
 const btnRollEl = document.getElementById('btn-roll');
 const btnHoldEl = document.getElementById('btn-hold');
-
 const diceEl = document.getElementById('dice');
-
-
 const player1El = document.getElementById('player-1');
 const player2El = document.getElementById('player-2');
 
@@ -23,14 +17,6 @@ const player2El = document.getElementById('player-2');
 // global variables
 let scores , currentScore , activePlayer, dice ;
 
-
-
-// audio function
-// function playMusic(){
-//   let audio = new Audio('./audio/rolling-dice.mp3');
-//   audio.play();
-// }
-// functions 
 
 // initial values
 function init(){
@@ -106,12 +92,10 @@ btnRollEl.addEventListener('click' , function(){
  
 
  //  display dice
-//  playMusic()
  diceEl.classList.remove('hidden');
  diceEl.src=`./images/dice-${dice}.png`
  
 
-  // dice === 1
 
   if(dice !== 1){
     currentScore = currentScore + dice;
